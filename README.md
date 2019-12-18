@@ -44,9 +44,11 @@ I believe i was, for the most part, successful in achieving these goals, however
 
 *Keras/TensorFlow*: In order to build my models I utilized CuDNNLSTM and CuDNNGRU from Keras.
 	CuDNNLSTM: Fast LSTM implementation backed by cuDNN. 
+	
 	"Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies."
 	
 	CuDNNGRU: Fast GRU implementation backed by cuDNN.
+	
 	"The GRU, known as the Gated Recurrent Unit is an RNN architecture, which is similar to LSTM units. The GRU comprises of the reset gate and the update gate 		instead of the input, output and forget gate of the LSTM.
 	The reset gate determines how to combine the new input with the previous memory, and the update gate defines how much of the previous memory to keep around. If 	we set the reset to all 1’s and update gate to all 0’s we again arrive at our plain RNN model."
 
