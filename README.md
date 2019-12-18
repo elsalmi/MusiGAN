@@ -8,6 +8,7 @@ Music Generation using LSTM, GRU &amp; GAN
 * TensorFlow 1.15/Keras 2.2.4-tf
 * Keras 
 * Music21
+* Magenta
 
 -----------
     
@@ -65,6 +66,10 @@ The Process was as follows: <br />
 	3. The notes were then converted into a list of corresponding integer indices (as Neural Networks handle numerical data better than categorical data) <br />
 	4. Feed into network <br />
 
+## Results 
 
+Many online tutorials online exist that show you how to generate music using RNN models. I used these as a springboard in order to kickstart my project. In addition to  Having built many models sing different hyperprameters, it became clear to me that generating music GANs, generated better results. I shall be going over the model details duirng the presentation. 
+
+Furthermore, I shall aim to utilize majenta.js in order to showcase my model genereating music in real time. 
 
 	
