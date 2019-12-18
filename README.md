@@ -5,7 +5,7 @@ Music Generation using LSTM, GRU &amp; GAN
 ## Requirements
 
 * Python 3.x
-* TensorFlow 1.15
+* TensorFlow 1.15/Keras 2.2.4-tf
 * Keras 
 * Music21
 
@@ -38,7 +38,30 @@ I should also note that a basic understanding of music theory would come in hand
 
 I believe i was, for the most part, successful in achieving these goals, however significant time was spent on getting everything to work, which is not necessarily a bad thing as the idea behind this is to gain an exhaustive overview of the practice. 
 
-## Tools 
+## Packages
 
-### Music21:
+*Music21*: A package written by MIT faculty, it is a set of tools for helping scholars and other active listeners answer questions about music quickly and simply. I utilize it in order to convert 
 
+*Keras/TensorFlow*: In order to build my models I utilized CuDNNLSTM and CuDNNGRU from Keras.
+	CuDNNLSTM: Fast LSTM implementation backed by cuDNN. 
+	"Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies."
+	
+	CuDNNGRU: Fast GRU implementation backed by cuDNN.
+	"The GRU, known as the Gated Recurrent Unit is an RNN architecture, which is similar to LSTM units. The GRU comprises of the reset gate and the update gate 		instead of the input, output and forget gate of the LSTM.
+	The reset gate determines how to combine the new input with the previous memory, and the update gate defines how much of the previous memory to keep around. If 	we set the reset to all 1’s and update gate to all 0’s we again arrive at our plain RNN model."
+
+## Data
+
+Firstly, we need to use audio files in MIDI (*.mid) in order to be able to feed it into our different models. MIDI files are basically a set of instructions. MIDI data contains a list of events or messages that tell an electronic device (musical instrument, computer sound card, cell phone, et cetera) how to generate a certain sound. 
+
+Although many exhaustive datasets exist with thousands of labelled midi files, I decided to go for a relatively basic dataset, bearing in mind that the goal is not to beat some benchmark accuracy, but to be able try out a lot of different things to see what works and what doesn't. Moreover, I came to the realization that the dataset used is quite important when it comes to the performance of a model. Eventually, I decided to go for the *Pokemon MIDIs* dataset as it not heavy, quite simple in terms of melody.
+
+The Process was as follows:
+	1. Convert files melodic sequences into a sequence of notes. 
+	2. Extract different elements from the song, i.e. pitch, dominant key, etc.
+	3. The notes were then converted into a list of corresponding integer indices (as Neural Networks handle numerical data better than categorical data)
+	4. Feed into network
+
+
+
+	
