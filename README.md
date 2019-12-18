@@ -40,10 +40,11 @@ I believe i was, for the most part, successful in achieving these goals, however
 
 ## Packages
 
-*Music21*: A package written by MIT faculty, it is a set of tools for helping scholars and other active listeners answer questions about music quickly and simply. I utilize it in order to convert 
+_Music21_: A package written by MIT faculty, it is a set of tools for helping scholars and other active listeners answer questions about music quickly and simply. I utilize it in order to convert 
 
-*Keras/TensorFlow*: In order to build my models I utilized CuDNNLSTM and CuDNNGRU from Keras.
-	CuDNNLSTM: Fast LSTM implementation backed by cuDNN. 
+_Keras/TensorFlow_: In order to build my models I utilized CuDNNLSTM and CuDNNGRU from Keras.
+	
+CuDNNLSTM: Fast LSTM implementation backed by cuDNN. 
 	
 	"Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies."
 	
