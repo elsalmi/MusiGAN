@@ -26,9 +26,9 @@ I should also note that a basic understanding of music theory would come in hand
 
 ## Project Breakdown 
 
-1. Set up a stable working environment that can handle the intense computation needed to train the model. 
-	a. Utilize AWS or Google Cloud Platform and familiarize myself with it. 
-2. Build Neural Networks 
+1. Set up a stable working environment that can handle the intense computation needed to train the model. \
+	a. Utilize AWS or Google Cloud Platform and familiarize myself with it. \
+2. Build Neural Networks \
 	a. Read the audio files into a format that can be understood by a computer.
 	b. Pre-process and parse the data to feed into the neural network. 
 	c. Build several neural models and compare different combinations of hyperparameters. 
