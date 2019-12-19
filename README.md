@@ -66,10 +66,18 @@ The Process was as follows: <br />
 	3. The notes were then converted into a list of corresponding integer indices (as Neural Networks handle numerical data better than categorical data) <br />
 	4. Feed into network <br />
 
-## Results 
+## Results &amp; Findings
 
-Many online tutorials online exist that show you how to generate music using RNN models. I used these as a springboard in order to kickstart my project. In addition to  Having built many models sing different hyperprameters, it became clear to me that generating music GANs, generated better results. I shall be going over the model details duirng the presentation. 
+-- Many online tutorials online exist that show you how to generate music using RNN models. I used these as a springboard in order to kickstart my project. In addition to  Having built many models sing different hyperprameters, it became clear to me that generating music GANs, generated better results. I shall be going over the model details duirng the presentation. Furthermore, I shall aim to utilize majenta.js in order to showcase my model generating music in real time. 
 
-Furthermore, I shall aim to utilize majenta.js in order to showcase my model genereating music in real time. 
+-- I found that myself leaning towards GANs and their output for two main reasons: a) They were much faster to train b) I was getting repetitive notes using LSTM/GRU. In terms of model evaluation, I found it interesting to listen to the different outputs and comparing them to one another, irrespective of score. I placed less emphasis on some numerical metric and more effort into trying to manipulate the output as much as I can. Irrespective of the model used, the actual output itself, I believe, would need a fair amount of human manipulation in order to turn it into "music"
+
+-- Preprocessing the data has a substantial effect on model performance, i.e. note frequency, rhythm pattern, etc. However, this sort of data manipulation would specific be specific to the data/instrument being fed into the network; such modifications may not be appropriate for another dataset/instrument.
+
+## Future Work 
+
+In the future i would like to work some more on  building a more robust GAN model but with a greater emphasis on the output, i.e. generate two MIDI sequences, transpose one of them, and then play them using instruments. For some reason, I have been unsuccessful in generating music using other instruments than the piano using Music21's instrument library. I would like to see if the instrument library can be somehow configured into our model. Furthermore, suppose we have a track with two instruments playing simultaneously in one track, would it be possible to somehow train a isolate the two instruments, feed them into their respective models, but still somehow link both of them together? Perhaps assigning some evaluation metric could be utilized in order for the two models to take one another into account during training. 
+
+
 
 	
