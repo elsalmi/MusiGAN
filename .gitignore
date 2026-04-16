@@ -1,0 +1,46 @@
+# macOS/editor noise
+.DS_Store
+.idea/
+.ipynb_checkpoints/
+
+# Python/runtime noise
+__pycache__/
+*.py[cod]
+.env
+.venv/
+venv/
+
+# Local logs and experiment output
+logs/
+*.log
+runs/
+wandb/
+tensorboard/
+
+# Generated model/checkpoint artifacts
+*.h5
+*.hdf5
+*.ckpt
+*.keras
+*.model
+*.weights*
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Generated or local media artifacts
+*.mid
+*.midi
+*.wav
+*.mp3
+*.flac
+outputs/
+generated/
+samples/
+Output midi/
+
+# Local/private data drops
+data/raw/
+Data/raw/
+Data/local/
